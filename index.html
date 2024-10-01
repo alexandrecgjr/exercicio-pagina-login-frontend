@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    <div class="imagem">
-        <div class="image">
-            <img src="assets/images/image.svg" alt="image">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de Imagem e Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="imagemlogo">
+        <div class="imagem">
+            <img src="src/assets/images/image.svg">
         </div>
-    </div>
+    </div> 
 
     <div class="conteudo">
         <div class="container">
-            <div class="frame">
-                <div class="titulo">
-                    <p class="titulo1">
-                        Bem-vindo de volta
-                    </p>
-
-                    <h1 class="titulo2">
-                        Faça login na sua conta
-                    </h1>
-
-                </div>
+            <h1>Bem-vindo de volta</h1>
+            <h2>Faça login na sua conta</h2>
+                <form>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                    <br><br>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                    <br><br>
+                    <input type="checkbox">Lembre de mim</input>
+                    <button type="button">Esqueceu sua senha?</button>
+                    <br><br>
+                    <button type="submit">Entrar na conta</button>
+                    <br><br>
+                    <button type="submit">Ou faça login com o Google</button>
+                    <br><br>
+                    <br><br>
+                    <h3>Não tem uma conta? Cadastre-se</h3>
+                </form>
             </div>
-         
         </div>
-
-    </div>
-
-    </body>
+</body>
 </html>
